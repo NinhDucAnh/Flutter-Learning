@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "630926980162",
+    "project_id": "ulearningbloclbys",
+    "storage_bucket": "ulearningbloclbys.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630926980162:android:e46b273affa67158c469db",
+        "android_client_info": {
+          "package_name": "com.example.flutter_ulearning_bloc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630926980162-83upg8drb32jkr0156c3dt4f7iteamoq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBeh2IvBeuW6Kd9RfROI5619_So1G3xFk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "630926980162-83upg8drb32jkr0156c3dt4f7iteamoq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "630926980162-2nopn32l1miah0evpfdi5cppsehdv9lg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterulearningbloc"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

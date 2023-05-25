@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ulearning_bloc/common/values/colors.dart';
 
-AppBar buildAppBar() {
+AppBar buildAppBar(String type) {
   return AppBar(
     bottom: PreferredSize(
       preferredSize: const Size.fromHeight(1.0),
@@ -12,14 +12,16 @@ AppBar buildAppBar() {
         height: 1.0,
       ),
     ),
-    backgroundColor: Colors.white,
     title: Center(
-      child: Text(
-        'Log In',
-        style: TextStyle(
-            color: AppColors.primaryText,
-            fontSize: 16.sp,
-            fontWeight: FontWeight.normal),
+      child: Container(
+        margin: EdgeInsets.only(right: type=="Sign up"? 55.w:0.w),
+        child: Text(
+          type,
+          style: TextStyle(
+              color: AppColors.primaryText,
+              fontSize: 16.sp,
+              fontWeight: FontWeight.normal),
+        ),
       ),
     ),
   );

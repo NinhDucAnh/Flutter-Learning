@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
         builder: (context,child) =>  MaterialApp(
           debugShowCheckedModeBanner: false,
           theme: ThemeData(
-            appBarTheme: AppBarTheme(
+            appBarTheme: const AppBarTheme(
               iconTheme: IconThemeData(
                 color: AppColors.primaryText
               ),
@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
           ),
           home:  const Welcome(),
           routes: {
-            "myHomePage": (context) => const MyHomePage(),
+            // "myHomePage": (context) => const MyHomePage(),
             "signIn": (context) => const SignIn(),
             "register": (context) => const Register(),
           },

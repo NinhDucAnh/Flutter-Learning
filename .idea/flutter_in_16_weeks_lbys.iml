@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/Flutter UI/flutter_news_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter UI/flutter_news_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter UI/flutter_news_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter State Management/Bloc/flutter_ulearning_bloc/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter State Management/Bloc/flutter_ulearning_bloc/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter State Management/Bloc/flutter_ulearning_bloc/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter UI/flutter_drawer_tab_basic/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter UI/flutter_drawer_tab_basic/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter UI/flutter_drawer_tab_basic/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter UI/flutter_online_course_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter UI/flutter_online_course_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter UI/flutter_online_course_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter UI/flutter_auth_basic/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter UI/flutter_auth_basic/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter UI/flutter_auth_basic/.dart_tool" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Dart SDK" level="project" />
+    <orderEntry type="library" name="Dart Packages" level="project" />
+  </component>
+</module>

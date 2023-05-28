@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ulearning_bloc/pages/register/bloc/register_blocs.dart';
 import 'package:flutter_ulearning_bloc/pages/register/bloc/register_events.dart';
 import 'package:flutter_ulearning_bloc/pages/register/bloc/register_states.dart';
+import 'package:flutter_ulearning_bloc/pages/register/register_controller.dart';
 
 import '../common_widget.dart';
 
@@ -17,8 +18,8 @@ class Register extends StatefulWidget {
 class _RegisterState extends State<Register> {
   @override
   Widget build(BuildContext context) {
-    var registerBlocs = context.read<RegisterBlocs>();
-    return BlocBuilder<RegisterBlocs, RegisterState>(
+    var registerBlocs = context.read<RegisterBloc>();
+    return BlocBuilder<RegisterBloc, RegisterState>(
         builder: (context, state) => Container(
               color: Colors.white,
               child: SafeArea(
@@ -44,7 +45,7 @@ class _RegisterState extends State<Register> {
                               reusableText("Username"),
                               buildTextField("Enter your username", "name",
                                   "user", (value) {
-                                    context.read<RegisterBlocs>().add(UserNameEvent(value));
+                                    context.read<RegisterBloc>().add(UserNameEvent(value));
                                   }),
                               reusableText("Email"),
                               buildTextField("Enter your email address",
@@ -69,7 +70,8 @@ class _RegisterState extends State<Register> {
                             child: reusableText(
                                 "By creating an account you have to agree with our them & condition.")),
                         buildLogInAdnRegButton("Sign Up", "login", () {
-                          Navigator.of(context).pushNamed('register');
+                          //Navigator.of(context).pushNamed('register');
+                          RegisterController(context).handleEmailRegister();
                         }),
                       ],
                     ),

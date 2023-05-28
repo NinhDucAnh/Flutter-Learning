@@ -184,3 +184,19 @@ Widget buildLogInAdnRegButton(String buttonName, String buttonType, void Functio
     ),
   );
 }
+
+BottomNavigationBarItem reusableBtmNavBarItem(String icon){
+  return BottomNavigationBarItem(
+      label: icon,
+      icon: SizedBox(
+        width: 15.w,
+        height: 15.h,
+        child: Image.asset("assets/icons/$icon.png"),
+      ),
+      activeIcon: SizedBox(
+          width: 15.w,
+          height: 15.h,
+          child: Image.asset("assets/icons/$icon.png",color: AppColors.primaryElement,)
+      )
+  );
+}

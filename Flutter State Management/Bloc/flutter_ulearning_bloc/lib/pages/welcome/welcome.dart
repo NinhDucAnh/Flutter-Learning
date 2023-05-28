@@ -2,10 +2,12 @@ import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_ulearning_bloc/common/routes/names.dart';
 import 'package:flutter_ulearning_bloc/common/values/colors.dart';
-import 'package:flutter_ulearning_bloc/main.dart';
+import 'package:flutter_ulearning_bloc/global.dart';
 import 'package:flutter_ulearning_bloc/pages/welcome/bloc/welcome_events.dart';
 
+import '../../common/values/constants.dart';
 import 'bloc/welcome_blocs.dart';
 import 'bloc/welcome_states.dart';
 
@@ -124,8 +126,9 @@ class _WelcomeState extends State<Welcome> {
                   curve: Curves.easeIn);
             } else {
               // Navigator.of(context).push(MaterialPageRoute(builder: (context)=>MyHomePage()));
+              Global.storageService.setBool(AppConstants.STORAGE_DEVICE_OPEN_FIRST_TIME, true);
               Navigator.of(context)
-                  .pushNamedAndRemoveUntil('signIn', (route) => false);
+                  .pushNamedAndRemoveUntil(AppRoutes.SIGN_IN, (route) => false);
             }
           },
           child: Container(

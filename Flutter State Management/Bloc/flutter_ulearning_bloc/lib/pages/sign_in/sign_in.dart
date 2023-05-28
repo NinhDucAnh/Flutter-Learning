@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_ulearning_bloc/common/routes/names.dart';
 import 'package:flutter_ulearning_bloc/pages/sign_in/sign_in_controller.dart';
 
 import '../common_widget.dart';
@@ -70,7 +71,7 @@ class _SignInState extends State<SignIn> {
                               .handleSignIn("email");
                         }),
                         buildLogInAdnRegButton("Sign up", "register", () {
-                          Navigator.of(context).pushNamed('register');
+                          Navigator.of(context).pushNamed(AppRoutes.REGISTER);
                         }),
                       ],
                     ),
